@@ -1,13 +1,15 @@
 package com.example.test.student.dto;
 
+import lombok.AllArgsConstructor;
 import lombok.Data;
+import lombok.NoArgsConstructor;
 
 import java.time.LocalDate;
 
 @Data
-public class StudentResponse {
-
-    private int id;
+@NoArgsConstructor
+@AllArgsConstructor
+public class StudentCreateParam {
 
     private String firstName;
 
@@ -18,6 +20,4 @@ public class StudentResponse {
     private String email;
 
     private String phone;
-
-    private int age;
 }
